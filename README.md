@@ -53,7 +53,9 @@ Dataset berasal dari [Corona NLP Dataset](https://www.kaggle.com/datatattle/covi
 
 ### Eksplorasi Data (EDA)
 - Distribusi label sentimen menunjukkan ketidakseimbangan, dengan dominasi label netral dan negatif.
+  ![sentiment](images/eda_sentiment.png)  
 - Distribusi lokasi menunjukkan dominasi dari beberapa negara bagian di AS dan Inggris.
+  ![location](images/eda_location.png)  
 
 Visualisasi disajikan dalam bentuk barplot sentimen dan lokasi teratas.
 
