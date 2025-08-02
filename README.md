@@ -88,10 +88,6 @@ df['text_lemmitizing'] = df['text_tokenizing'].apply(lemmitizingText)
 - Input berupa token yang di-embedding.
 - Model belajar dari urutan kata, cocok untuk menangkap konteks kalimat.
 
-### Top-N Output
-- Untuk setiap tweet, model mengoutput prediksi salah satu dari 5 label sentimen.
-- Prediksi disajikan dalam bentuk label beserta confidence score.
-
 ### Kelebihan & Kekurangan
 
 | Metode              | Kelebihan                                                                 | Kekurangan                                                  |
@@ -106,9 +102,8 @@ df['text_lemmitizing'] = df['text_tokenizing'].apply(lemmitizingText)
 - **F1-Score (macro)**: harmonisasi antara precision dan recall untuk semua kelas.
 
 ### Hasil Evaluasi
-- Logistic Regression menghasilkan akurasi sekitar 70–75% (baseline yang kuat).
-- GRU mencapai akurasi lebih tinggi (tergantung pelatihan), dengan F1-score yang lebih baik pada label minoritas.
-- Model GRU unggul dalam generalisasi terhadap data tidak seimbang.
+- Logistic Regression menghasilkan akurasi training sekitar 70–75% (baseline yang kuat).
+- GRU mencapai akurasi lebih tinggi (2-3%) dalam data pelatihan.
 
 ## Kesimpulan
 Model klasifikasi sentimen berbasis teks dapat dibangun secara efektif baik menggunakan metode klasik (TF-IDF + Logistic Regression) maupun deep learning (GRU).  
