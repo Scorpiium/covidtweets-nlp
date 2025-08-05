@@ -5,8 +5,6 @@
 ### Latar Belakang
 Selama pandemi COVID-19, media sosial menjadi salah satu saluran utama bagi masyarakat untuk mengekspresikan opini, kekhawatiran, dan reaksi mereka terhadap berbagai peristiwa terkait pandemi. Data sosial ini bersifat masif dan tidak terstruktur, namun mengandung informasi berharga mengenai persepsi publik. Untuk memahami dinamika tersebut, diperlukan pendekatan **Natural Language Processing (NLP)** dan **machine learning** untuk mengklasifikasikan opini dalam bentuk sentimen.
 
-Project ini bertujuan mengembangkan model klasifikasi sentimen berdasarkan teks tweet yang terkait dengan COVID-19, menggunakan pendekatan tradisional (Logistic Regression dengan TF-IDF) serta pendekatan berbasis deep learning (GRU).
-
 ### Pentingnya Proyek
 - Memberikan wawasan tentang persepsi publik secara real-time terhadap pandemi.
 - Membantu pemerintah dan lembaga kesehatan masyarakat dalam memantau dinamika opini publik.
