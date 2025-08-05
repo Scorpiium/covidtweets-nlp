@@ -90,10 +90,11 @@ df['text_lemmitizing'] = df['text_tokenizing'].apply(lemmitizingText)
 
 ### Kelebihan & Kekurangan
 
-| Metode              | Kelebihan                                                                 | Kekurangan                                                  |
-|---------------------|---------------------------------------------------------------------------|-------------------------------------------------------------|
-| Logistic Regression | Cepat, ringan, mudah interpretasi                                         | Tidak menangkap urutan kata                                 |
-| GRU                 | Mampu memahami konteks dan urutan kata                                    | Butuh sumber daya tinggi dan waktu pelatihan lebih lama     |
+| Metode              | Kelebihan                                                                                                       | Kekurangan                                                  |
+|---------------------|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| Logistic Regression | Cepat, ringan, mudah interpretasi                                                                               | Tidak menangkap urutan kata.                                |
+| GRU                 | - Mampu memahami konteks dan urutan kata                                                                        |                                                             |
+|                     | - Memiliki potensi untuk nilai akurasi lebih tinggi dari model Logistic Regression dengan pelatihan lebih lama  | Butuh sumber daya tinggi dan waktu pelatihan lebih lama     |
 
 ## 6. Evaluation
 
