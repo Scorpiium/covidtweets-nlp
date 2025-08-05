@@ -90,11 +90,10 @@ df['text_lemmitizing'] = df['text_tokenizing'].apply(lemmitizingText)
 
 ### Kelebihan & Kekurangan
 
-| Metode              | Kelebihan                                                                                                       | Kekurangan                                                  |
-|---------------------|-----------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| Logistic Regression | Cepat, ringan, mudah interpretasi                                                                               | Tidak menangkap urutan kata.                                |
-| GRU                 | - Mampu memahami konteks dan urutan kata                                                                        |                                                             |
-|                     | - Memiliki potensi untuk nilai akurasi lebih tinggi dari model Logistic Regression dengan pelatihan lebih lama  | Butuh sumber daya tinggi dan waktu pelatihan lebih lama     |
+| Metode              | Kelebihan                                                                                                                                               | Kekurangan                                                  |
+|---------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
+| Logistic Regression | Cepat, ringan, mudah interpretasi                                                                                                                       | Tidak menangkap urutan kata.                                |
+| GRU                 | Mampu memahami konteks dan urutan kata. Memiliki potensi untuk nilai akurasi lebih tinggi dari model Logistic Regression dengan pelatihan lebih lanjut  | Butuh sumber daya tinggi dan waktu pelatihan lebih lama     |
 
 ## 6. Evaluation
 
@@ -105,6 +104,7 @@ df['text_lemmitizing'] = df['text_tokenizing'].apply(lemmitizingText)
 ### Hasil Evaluasi
 - Logistic Regression menghasilkan akurasi training sekitar 70–75% (baseline yang kuat).
 - GRU mencapai akurasi lebih tinggi (2-3%) dalam data pelatihan.
+- Kedua model memiliki penurunan akurasi sebesar 10-20% dari data pelatihan ke data training.
 
 ## Kesimpulan
 Model klasifikasi sentimen berbasis teks dapat dibangun secara efektif baik menggunakan metode klasik (TF-IDF + Logistic Regression) maupun deep learning (GRU).  
