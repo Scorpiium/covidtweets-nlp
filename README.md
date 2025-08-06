@@ -112,12 +112,12 @@ df['text_lemmitizing'] = df['text_tokenizing'].apply(lemmitizingText)
 
 #### F1-Score
 | Label | F1-Score  Training | F1-Score Testing |
-|-------|--------------------|-----------------|
-| 0     | 73%                | 55%             |
-| 1     | 76%                | 58%             |
-| 2     | 72%                | 54%             |
-| 3     | 80%                | 68%             |
-| 4     | 74%                | 57%             |
+|-------|--------------------|------------------|
+| 0     | 0.73               | 0.55             |
+| 1     | 0.76               | 0.58             |
+| 2     | 0.72               | 0.54             |
+| 3     | 0.80               | 0.68             |
+| 4     | 0.74               | 0.57             |
 
 #### Confusion Matrix (Logistic Regression)
 ![conf_train](images/train_matrix_lr_tfidf.png)
