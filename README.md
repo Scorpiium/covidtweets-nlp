@@ -44,10 +44,9 @@ Dataset berasal dari [Corona NLP Dataset](https://www.kaggle.com/datatattle/covi
 
 ### Deskripsi Dataset
 - Total data: ± 40.000 tweet
-- Fitur:
+- Fitur yang digunakan:
   - `OriginalTweet`: teks asli tweet
   - `Sentiment`: label target (5 kelas sentimen)
-  - `Location`: lokasi pengguna (optional)
 
 ### Eksplorasi Data (EDA)
 - Distribusi label sentimen menunjukkan ketidakseimbangan, dengan dominasi label `positif` dan `negatif`.
