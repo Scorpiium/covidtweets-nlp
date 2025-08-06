@@ -97,12 +97,34 @@ df['text_lemmitizing'] = df['text_tokenizing'].apply(lemmitizingText)
 
 ### Metrik yang Digunakan
 - **Akurasi**: proporsi prediksi yang benar dari seluruh prediksi.
-- **F1-Score (macro)**: harmonisasi antara precision dan recall untuk semua kelas.
+- **F1-Score (Logistic Regression)**: harmonisasi antara precision dan recall untuk semua kelas.
 
 ### Hasil Evaluasi
-- Logistic Regression menghasilkan akurasi training sekitar 70–75% (baseline yang kuat).
+- Logistic Regression menghasilkan akurasi training 75% dan GRU menghasilkan akurasi training 84%.
 - GRU mencapai akurasi lebih tinggi (2-3%) dalam data pelatihan.
 - Kedua model memiliki penurunan akurasi sebesar 10-20% dari data pelatihan ke data training.
+
+#### Akurasi
+| Metode              | Akurasi Training | Akurasi Testing |
+|---------------------|------------------|-----------------|
+| Logistic Regression | 75%              | 58%             |
+| GRU                 | 84.2%            | 60%             |
+
+#### F1-Score
+| Label | F1-Score  Training | F1-Score Testing |
+|-------|--------------------|-----------------|
+| 0     | 73%                | 55%             |
+| 1     | 76%                | 58%             |
+| 2     | 72%                | 54%             |
+| 3     | 80%                | 68%             |
+| 4     | 74%                | 57%             |
+
+#### Confusion Matrix (Logistic Regression)
+![conf_train](images/train_matrix_lr_tfidf.png)
+![conf_test](images/test_matrix_lr_tfidf.png)  
+
+#### Plot Akurasi dan Loss (GRU)
+![eval_gru](images/eval_gru.png)  
 
 ## Kesimpulan
 Model klasifikasi sentimen berbasis teks dapat dibangun secara efektif baik menggunakan metode klasik (TF-IDF + Logistic Regression) maupun deep learning (GRU).  
